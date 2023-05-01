@@ -53,6 +53,35 @@ nav{
     color: #000000;
     cursor: pointer;
 }
+.lines{
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 3px;
+}
+.menu{
+    display: none;
+    padding: 0 15px;
+}
+@media (max-width:412px){
+    .nav-link{
+     font-size: 18px;
+    }
+    .sec-1{
+        padding: 0;
+    }
+    .menu{
+        display: block;
+    }
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+}
 .sec-2{
     background-color: #dadbf1;
     padding: 6rem 2rem;
@@ -111,6 +140,7 @@ input:focus{
     nav{
         flex-direction: column;
         padding: 0;
+        
     }
     h1{
         font-size: 18px;

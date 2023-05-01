@@ -14,13 +14,19 @@
             <p class="abstract">Abstract</p>
             <p style="padding: 0 1rem; font-size: 25px;">|</p>
             <a href="#" class="nav-link">Help Center</a>
+            <section class="menu" id="toggle-button">
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+            </section>
         </section>
         <section class="sec-1">
-            <div class="btn-container">
+            <div class="btn-container" id="btn-id">
                 <button class="btn-1">Submit a request</button>
                 <button class="btn-2">Sign in</button>
             </div>
         </section>
+
     </nav>  
     <section class="sec-2">
         <h1>How can we help?</h1>
@@ -123,4 +129,11 @@
         </div>
     </footer>
 </body>
+<script>
+    const toggleButton = document.getElementById('toggle-button')
+    const navlist = document.getElementById('btn-id')
+    toggleButton.addEventListener('click', () => {
+        btn-id.classList.toggle('active');
+    })
+</script>
 </html>
